@@ -34,3 +34,7 @@ type Enrollment = {
     Course: Course
     Status: EnrolledCourses
 }
+
+type Response<'T> = 
+    | Success of 'T
+    | Error of string
